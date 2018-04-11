@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Wikipedia Search</title>
+    <link rel="stylesheet" href="wikipedia.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   </head>
   <body>
+    <header id="pageHeader">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Wikipedia-banner.png">
+    </header>
 
+    <section id="menu"  class="input-group mb-3">
+      <input class="form-control" id="searchInput" type="text"  placeholder="Insert a keyword">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="search"><i class="fas fa-search"></i></button>
+        <button class="btn btn-outline-secondary" type="button" id="random"><i class="fas fa-random"></i></button>
+      </div>
+    </section>
+    <div id="results"></div>
+    <footer><span id="en" class="badge badge-primary">EN</span> - <span id="fr">FR</span></footer>
+    <script src="wikipedia.js"></script>
   </body>
 </html>
